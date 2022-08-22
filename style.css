@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #43AFFC;
+    background-image: url(/images/hotair-baloon.png) no-repeat center/cover;
+}
+
+/* card header */
+.card .card-header {
+    color: #43AFFC;
+}
+
+.card .card-header .row i{
+    font-size: 0px;
+}
+
+.container.active .card-header i{
+    font-size: 18px;
+}
+
+
+.card-header h4 {
+    font-weight: 500;
+}
+
+
+/* card body css */
+.card-body input {
+    font-size: 17px;
+}
+
+.card-body .get-button .btn {
+    width: 100%;
+    background-color: #43AFFC;
+    color: white;
+}
+
+
+
+.card-body .seperator {
+    height: 1px;
+    margin: 25px 0;
+    background-color: #ccc;
+    width: 100%;
+
+}
+
+.seperator::before {
+    content: "or";
+    font-size: 20px;
+    color: #ccc;
+    background: #fff;
+    padding: 0 15px;
+}
+
+.info-text.error{
+    display: block;
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.info-text.pending{
+    display: block;
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border: 1px solid #bee5eb;
+}
+
+.card-body input:is(:focus, :valid) {
+    border: #43AFFC;
+}
+
+/* .card-body .info-text {
+    display: none;
+} */
+/* *********************************************** */
+.container.active .card1{
+    display: none;
+}
+
+.container .card2{
+    display: none;
+}
+.container.active .card2{
+    display: block;
+}
+/* *********************************************** */
+.card2 img {
+    max-width: 125px;
+}
+
+.card2 .temp {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.card2 .temp .numb {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.card2 .temp .deg {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.card2 .weather {
+    font-size: 20px;
+}
+
+.card2 .location {
+    font-size: 20px;
+}
+
+.card2 .location i {
+    font-size: 20px;
+}
+
+.card2 .bottom-details {
+    width: 100%;
+    border-top: 1px solid #bfbfbf;
+    /* background-color: red; */
+}
+
+/* .bottom-details .column{
+    width: 100%;
+} */
+.bottom-details .column i {
+    font-size: 30px;
+    color: #43AFFC;
+
+}
+
+.bottom-details .humidity {
+    border-left: 1px solid #bfbfbf;
+}
+
+.card2 .bottom-details span,
+p {
+    font-size: 18px;
+    font-weight: 500;
+}
