@@ -42,22 +42,22 @@ function weatherDetails(info) {
 
         if(id == 800){
             wIcon.src = "images/clear.svg";
-            document.body.style.backgroundImage = "url(/images/clearbg.jpg)";
+            document.body.style.backgroundImage = "url(images/clearbg.jpg)";
         }else if(id>=200 && id<=232){
             wIcon.src = "images/storm.svg";
-            document.body.style.backgroundImage = "url(/images/stormbg.jpg)";
+            document.body.style.backgroundImage = "url(images/stormbg.jpg)";
         }else if(id>=600 && id<=622){
             wIcon.src = "images/snow.svg";
-            document.body.style.backgroundImage = "url(/images/snowbg.jpg)";
+            document.body.style.backgroundImage = "url(images/snowbg.jpg)";
         }else if(id>=701 && id<=781){
             wIcon.src = "images/haze.svg";
-            document.body.style.backgroundImage = "url(/images/hazebg.jpg)";
+            document.body.style.backgroundImage = "url(images/hazebg.jpg)";
         }else if(id>=801 && id<=804){
             wIcon.src = "images/cloud.svg";
-            document.body.style.backgroundImage = "url(/images/cloudbg.jpg)";
+            document.body.style.backgroundImage = "url(images/cloudbg.jpg)";
         }else if((id>=300 && id<=321) || (id>=500 && id<=531)) {
             wIcon.src = "images/rain.svg";
-            document.body.style.backgroundImage = "url(/images/rainbg.jpg)";
+            document.body.style.backgroundImage = "url(images/rainbg.jpg)";
         }
 
 
